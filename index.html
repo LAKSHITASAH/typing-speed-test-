@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡️ Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Challenge</h1>
+        <p class="description">How fast can you type? Test your skills and track your improvement!</p>
+
+        <div id="text-display" class="text-to-type">
+            Click the input field below to start the test!
+        </div>
+
+        <textarea id="user-input" placeholder="Start typing here..." rows="5" autofocus></textarea>
+        
+        <div class="controls">
+            <button id="restart-btn" class="btn">Restart Test</button>
+        </div>
+
+        <div id="results" class="results-box">
+            <p><strong>WPM (Words Per Minute):</strong> <span id="wpm">0</span></p>
+            <p><strong>Accuracy:</strong> <span id="accuracy">100%</span></p>
+            <p><strong>Errors:</strong> <span id="errors">0</span></p>
+            <p><strong>Time:</strong> <span id="time">0s</span></p>
+        </div>
+
+        <div id="message" class="message">
+            </div>
+
+        <div id="history" class="history-box">
+            <h3>📈 Your Last 5 Scores</h3>
+            <ul id="score-history">
+                <li>No scores yet.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
